@@ -17,7 +17,7 @@ buildscript {
       targetSdkVersion: 30,
   ]
   ext.versions = [
-      kotlin: '1.4.31',
+      kotlin: '1.6.21',
   ]
   ext.deps = [
       androidPlugin: "com.android.tools.build:gradle:4.1.2",
@@ -36,7 +36,7 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath deps.androidPlugin
+    classpath 'com.android.tools.build:gradle:8.2.1'
     classpath deps.kotlin.plugin
   }
 }
