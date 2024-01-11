@@ -50,7 +50,7 @@ pipeline {
         //scmSkip(deleteBuild: true, skipPattern:'.*\\[ci skip\\].*')
         //sh 'apt-get update && sudo apt-get upgrade'
         sh 'apt-get -y update'
-        sh 'apt-get -y install default-jdk'
+        sh 'apt-get -y install openjdk-17-jdk'
         sh 'export GRADLE_USER_HOME=`pwd`/.gradle'
         sh 'chmod +x ./gradlew'
       
