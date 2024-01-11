@@ -34,7 +34,7 @@ pipeline {
     }   
     stage('Build and Deploy') {
        when {
-          expression { commitContainsSkip == 0 }
+          expression { commitContainsSkip == 1 }
      }
       agent {
         docker {
