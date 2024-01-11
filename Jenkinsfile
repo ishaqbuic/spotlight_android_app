@@ -2,7 +2,7 @@ def commitContainsSkip = 0
 
 pipeline {
   agent {
-        label 'Public_Cloud'
+        label 'tester_node'
       }
 
   
